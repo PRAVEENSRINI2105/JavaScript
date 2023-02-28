@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web HIstory API</title>
+</head>
+<body>
+    <p>This is the Home page</p><br>
+    <a href="/second.html">Go to second page</a><br>
+    <button onclick="goback()">Go Back</button><br>
+    <button onclick="goforward()">Go Forward</button>
+    <div id="pages">
+
+    </div>
+</body>
+<script>
+    function goback(){
+        history.back()
+    }
+    function goforward(){
+        history.forward()
+    }
+    //document.getElementById('pages').innerHTML=`The No of pages visited in the session is ${history.length}`
+</script>
+</html>
